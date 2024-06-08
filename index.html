@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Palette Picker</title>
+    <script type="module" crossorigin src="/mod2-solo-project-palette-picker/assets/index-DgtlC2EJ.js"></script>
+    <link rel="stylesheet" crossorigin href="/mod2-solo-project-palette-picker/assets/index-BZDWiPc7.css">
+  </head>
+  <body>
+    <main>
+      <h1>Palette Picker</h1>
+      <section>
+        <form id="palette-form-header" aria-labelledby="palette-form-heading">
+          <h2 id="palette-form-heading">Add a Palette</h2>
+          <div class="spacing">
+            <label for="palette-title-input">Palette Title:</label>
+            <input type="text" id="palette-title-input" name="paletteTitle" required>
+          </div>
+          <div class="spacing">
+            <label for="color-input-1">Color #1:</label>
+            <input type="color" id="color-input-1" name="color1">
+          </div>
+          <div class="spacing">
+            <label for="color-input-2">Color #2:</label>
+            <input type="color" id="color-input-2" name="color2">
+          </div>
+          <div class="spacing">
+            <label for="color-input-3">Color #3:</label>
+            <input type="color" id="color-input-3" name="color3">
+          </div>
+          <fieldset aria-labelledby="temperature-legend">
+            <legend id="temperature-legend">Temperature</legend>
+            <div class="radio-container">
+              <div>
+                <input type="radio" id="warm" name="temperature" value="warm">
+                <label for="warm">Warm</label>
+              </div>
+              <div>
+                <input type="radio" id="neutral" name="temperature" value="neutral" checked>
+                <label for="neutral">Neutral</label>
+              </div>
+              <div>
+                <input type="radio" id="cool" name="temperature" value="cool">
+                <label for="cool">Cool</label>
+              </div>
+            </div>
+          </fieldset>
+          <button id="create">Create the palette</button>
+        </form>
+      </section>
+      <section id="palette-section-header" aria-labelledby="palette-section-heading">
+        <h2 id="palette-section-heading">Palettes</h2>
+        <ul id="palettes-list"></ul>
+      </section>
+    </main>
+  </body>
+</html>
+
